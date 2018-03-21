@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<synergyConfiguration version="3">
+  <generalSettings>
+    <option key="#Board#" value="board.s3a7_ae_cap1"/>
+    <option key="CPU" value="S3A7"/>
+    <option key="#TargetName#" value="R7FS3A77C3A01CFB"/>
+    <option key="#TargetARCHITECTURE#" value="cortex-m4"/>
+    <option key="#RTOS#" value="Express Logic ThreadX"/>
+    <option key="#pinconfiguration#" value="S3A7_AE_CAP1.pincfg"/>
+    <option key="#SSPVersion#" value="1.3.2"/>
+    <option key="#DefaultLinkerScript#" value="S3A7.ld"/>
+    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##s3a7_ae_cap1##"/>
+  </generalSettings>
+  <synergyBspConfiguration>
+    <config id="config.bsp.s3a7.R7FS3A77C3A01CFB">
+      <property id="config.bsp.part_number" value="config.bsp.part_number.value"/>
+      <property id="config.bsp.rom_size_bytes" value="config.bsp.rom_size_bytes.value"/>
+      <property id="config.bsp.ram_size_bytes" value="config.bsp.ram_size_bytes.value"/>
+      <property id="config.bsp.data_flash_size_bytes" value="config.bsp.data_flash_size_bytes.value"/>
+      <property id="config.bsp.package_style" value="config.bsp.package_style.value"/>
+      <property id="config.bsp.package_pins" value="config.bsp.package_pins.value"/>
+    </config>
+    <config id="config.bsp.s3a7">
+      <property id="config.bsp.series" value="config.bsp.series.value"/>
+    </config>
+    <config id="config.bsp.s3a7.ssp">
+      <property id="config.bsp.s3a7.ssp.OFS0" value="config.bsp.s3a7.ssp.OFS0_Register.default"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.iwdt_start_mode" value="config.bsp.s3a7.ssp.OFS0.iwdt_start_mode.disabled"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.iwdt_timeout" value="config.bsp.s3a7.ssp.OFS0.iwdt_timeout.2048"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.iwdt_divisor" value="config.bsp.s3a7.ssp.OFS0.iwdt_divisor.128"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.iwdt_window_end" value="config.bsp.s3a7.ssp.OFS0.iwdt_window_end.0"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.iwdt_window_start" value="config.bsp.s3a7.ssp.OFS0.iwdt_window_start.100"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.iwdt_reset_interrupt" value="config.bsp.s3a7.ssp.OFS0.iwdt_reset_interrupt.Reset"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.iwdt_stop_control" value="config.bsp.s3a7.ssp.OFS0.iwdt_stop_control.stops"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.wdt_start_mode" value="config.bsp.s3a7.ssp.OFS0.wdt_start_mode.register"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.wdt_timeout" value="config.bsp.s3a7.ssp.OFS0.wdt_timeout.16384"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.wdt_divisor" value="config.bsp.s3a7.ssp.OFS0.wdt_divisor.128"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.wdt_window_end" value="config.bsp.s3a7.ssp.OFS0.wdt_window_end.0"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.wdt_window_start" value="config.bsp.s3a7.ssp.OFS0.wdt_window_start.100"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.wdt_reset_interrupt" value="config.bsp.s3a7.ssp.OFS0.wdt_reset_interrupt.Reset"/>
+      <property id="config.bsp.s3a7.ssp.OFS0.wdt_stop_control" value="config.bsp.s3a7.ssp.OFS0.wdt_stop_control.stops"/>
+      <property id="config.bsp.s3a7.ssp.OFS1" value="config.bsp.s3a7.ssp.OFS1_Register.default"/>
+      <property id="config.bsp.s3a7.ssp.OFS1.voltage_detection0.start" value="config.bsp.s3a7.ssp.OFS1.voltage_detection0.start.disabled"/>
+      <property id="config.bsp.s3a7.ssp.OFS1.voltage_detection0_level" value="config.bsp.s3a7.ssp.OFS1.voltage_detection0_level.190"/>
+      <property id="config.bsp.s3a7.ssp.OFS1.hoco_osc" value="config.bsp.s3a7.ssp.OFS1.hoco_osc.disabled"/>
+      <property id="config.bsp.s3a7.ssp.mpu_pc0_enable" value="config.bsp.s3a7.ssp.mpu_pc0_enable.disabled"/>
+      <property id="config.bsp.s3a7.ssp.mpu_pc0_start" value="0x000FFFFC"/>
+      <property id="config.bsp.s3a7.ssp.mpu_pc0_end" value="0x000FFFFF"/>
+      <property id="config.bsp.s3a7.ssp.mpu_pc1_enable" value="config.bsp.s3a7.ssp.mpu_pc1_enable.disabled"/>
+      <property id="config.bsp.s3a7.ssp.mpu_pc1_start" value="0x000FFFFC"/>
+      <property id="config.bsp.s3a7.ssp.mpu_pc1_end" value="0x000FFFFF"/>
+      <property id="config.bsp.s3a7.ssp.mpu_reg0_enable" value="config.bsp.s3a7.ssp.mpu_reg0_enable.disabled"/>
+      <property id="config.bsp.s3a7.ssp.mpu_reg0_start" value="0x000FFFFC"/>
+      <property id="config.bsp.s3a7.ssp.mpu_reg0_end" value="0x000FFFFF"/>
+    </config>
+    <config id="config.bsp.synergy">
+      <property id="config.bsp.common.main" value="0x1000"/>
+      <property id="config.bsp.common.process" value="0"/>
+      <property id="config.bsp.common.heap" value="0x1000"/>
+      <property id="config.bsp.common.vcc" value="3300"/>
+      <property id="config.bsp.common.checking" value="config.bsp.common.checking.enabled"/>
+      <property id="config.bsp.common.assert" value="config.bsp.common.assert.none"/>
+      <property id="config.bsp.common.error_log" value="config.bsp.common.error_log.none"/>
+      <property id="config.bsp.common.id1" value="0xFFFFFFFF"/>
+      <property id="config.bsp.common.id2" value="0xFFFFFFFF"/>
+      <property id="config.bsp.common.id3" value="0xFFFFFFFF"/>
+      <property id="config.bsp.common.id4" value="0xFFFFFFFF"/>
+    </config>
+  </synergyBspConfiguration>
+  <synergyClockConfiguration>
+    <node id="board.clock.xtal.freq" mul="12000000" option="_edit"/>
+    <node id="board.clock.pll.source" option="board.clock.pll.source.xtal"/>
+    <node id="board.clock.hoco.freq" option="board.clock.hoco.freq.24m"/>
+    <node id="board.clock.loco.freq" option="board.clock.loco.freq.32768"/>
+    <node id="board.clock.moco.freq" option="board.clock.moco.freq.8m"/>
+    <node id="board.clock.subclk.freq" option="board.clock.subclk.freq.32768"/>
+    <node id="board.clock.pll.div" option="board.clock.pll.div.2"/>
+    <node id="board.clock.pll.mul" option="board.clock.pll.mul.8"/>
+    <node id="board.clock.pll.display" option="board.clock.pll.display.value"/>
+    <node id="board.clock.clock.source" option="board.clock.clock.source.pll"/>
+    <node id="board.clock.iclk.div" option="board.clock.iclk.div.1"/>
+    <node id="board.clock.iclk.display" option="board.clock.iclk.display.value"/>
+    <node id="board.clock.pclka.div" option="board.clock.pclka.div.1"/>
+    <node id="board.clock.pclka.display" option="board.clock.pclka.display.value"/>
+    <node id="board.clock.pclkb.div" option="board.clock.pclkb.div.2"/>
+    <node id="board.clock.pclkb.display" option="board.clock.pclkb.display.value"/>
+    <node id="board.clock.pclkc.div" option="board.clock.pclkc.div.1"/>
+    <node id="board.clock.pclkc.display" option="board.clock.pclkc.display.value"/>
+    <node id="board.clock.pclkd.div" option="board.clock.pclkd.div.1"/>
+    <node id="board.clock.pclkd.display" option="board.clock.pclkd.display.value"/>
+    <node id="board.clock.bclk.div" option="board.clock.bclk.div.2"/>
+    <node id="board.clock.bclk.display" option="board.clock.bclk.display.value"/>
+    <node id="board.clock.bclkout.div" option="board.clock.bclkout.div.2"/>
+    <node id="board.clock.bclkout.display" option="board.clock.bclkout.display.value"/>
+    <node id="board.clock.fclk.div" option="board.clock.fclk.div.2"/>
+    <node id="board.clock.fclk.display" option="board.clock.fclk.display.value"/>
+    <node id="board.clock.uclk.display" option="board.clock.uclk.display.value"/>
+  </synergyClockConfiguration>
+  <synergyComponentSelection>
+    <component apiversion="" class="Custom_HAL_Drivers" condition="" group="all" subgroup="r_touch_v2" variant="" vendor="Renesas" version="1.3.0">
+      <description/>
+      <originalPack>Renesas.r_touch_v2.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Custom_Framework" condition="" group="all" subgroup="sf_touch_button_v2" variant="" vendor="Renesas" version="1.3.0">
+      <description/>
+      <originalPack>Renesas.sf_touch_button_v2.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Custom_HAL_Drivers" condition="" group="all" subgroup="r_ctsu_v2" variant="" vendor="Renesas" version="1.3.0">
+      <description/>
+      <originalPack>Renesas.r_ctsu_v2.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Common" condition="" group="all" subgroup="ssp_common" variant="" vendor="Renesas" version="1.3.2">
+      <description>SSP Common Code</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="Framework Services" condition="" group="all" subgroup="sf_el_ux" variant="" vendor="Renesas" version="1.3.2">
+      <description>Express Logic USBX Synergy Port: Provides=[USBX Driver] , Requires=[USBX ,Transfer]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="Framework Services" condition="" group="all" subgroup="sf_el_ux_comms_v2" variant="" vendor="Renesas" version="1.3.2">
+      <description>USBX CDC ACM Device Communciations: Provides=[Communications] , Requires=[USBX ,ThreadX]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_agt" variant="" vendor="Renesas" version="1.3.2">
+      <description>Asynchronous General Purpose Timer: Provides=[TIMER]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_cgc" variant="" vendor="Renesas" version="1.3.2">
+      <description>Clock Generation Circuit: Provides=[CGC]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_elc" variant="" vendor="Renesas" version="1.3.2">
+      <description>Event Link Controller: Provides=[ELC]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_fmi" variant="" vendor="Renesas" version="1.3.2">
+      <description>Factory MCU Information Module: Provides=[FMI]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_ioport" variant="" vendor="Renesas" version="1.3.2">
+      <description>I/O Port: Provides=[IO Port]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="Express Logic" condition="" group="all" subgroup="tx" variant="" vendor="Renesas" version="1.3.2">
+      <description>Express Logic ThreadX: Provides=[ThreadX]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="Express Logic" condition="" group="all" subgroup="ux" variant="" vendor="Renesas" version="1.3.2">
+      <description>Express Logic USBX: Provides=[USBX] , Requires=[ThreadX ,USBX Driver]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="Express Logic" condition="" group="all" subgroup="ux_device_class_cdc_acm" variant="" vendor="Renesas" version="1.3.2">
+      <description>Express Logic USBX Device Class CDC ACM: Provides=[USBX Device Class CDC ACM] , Requires=[ThreadX ,USBX]</description>
+      <originalPack>Renesas.Synergy.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="s3a7" subgroup="device" variant="R7FS3A77C3A01CFB" vendor="Renesas" version="1.3.2">
+      <description>Board support package for R7FS3A77C3A01CFB</description>
+      <originalPack>Renesas.Synergy_mcu_s3a7.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="s3a7" subgroup="device" variant="" vendor="Renesas" version="1.3.2">
+      <description>Board support package for S3A7</description>
+      <originalPack>Renesas.Synergy_mcu_s3a7.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="s3a7" subgroup="ssp" variant="" vendor="Renesas" version="1.3.2">
+      <description>Board support package for S3A7</description>
+      <originalPack>Renesas.Synergy_mcu_s3a7.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="Board" subgroup="s3a7_ae_cap1" variant="" vendor="Renesas" version="1.3.2">
+      <description>AE-CAP1 S3A7 Board Support Files</description>
+      <originalPack>Renesas.Synergy_board_s3a7_ae_cap1.1.3.2.pack</originalPack>
+    </component>
+    <component apiversion="" class="Custom_HAL_Drivers" condition="" group="all" subgroup="sf_ctsu_comm" variant="" vendor="Renesas" version="1.3.0">
+      <description/>
+      <originalPack>Renesas.sf_ctsu_comm.1.3.0.pack</originalPack>
+    </component>
+  </synergyComponentSelection>
+  <synergyIcuConfiguration/>
+  <synergyMessagingConfiguration/>
+  <synergyModuleConfiguration>
+    <module id="module.driver.cgc_on_cgc.0">
+      <property id="module.driver.cgc.name" value="g_cgc"/>
+    </module>
+    <module id="module.driver.elc_on_elc.0">
+      <property id="module.driver.elc.name" value="g_elc"/>
+    </module>
+    <module id="module.driver.ioport_on_ioport.0">
+      <property id="module.driver.ioport.name" value="g_ioport"/>
+    </module>
+    <module id="module.driver.fmi_on_fmi.0">
+      <property id="module.driver.fmi.name" value="g_fmi"/>
+    </module>
+    <module id="module.driver.ctsu_on_ctsu.2079136275">
+      <property id="module.driver.ctsu.name" value="g_ctsu0"/>
+      <property id="module.driver.ctsu.pclkb_div" value="module.driver.ctsu.pclkb_div.div_1"/>
+      <property id="module.driver.ctsu.mode" value="module.driver.ctsu.mode.mutual0"/>
+      <property id="module.driver.ctsu.ctsusoff" value="module.driver.ctsu.ctsusoff.enabled"/>
+      <property id="module.driver.ctsu.data" value="module.driver.data.workbench"/>
+      <property id="module.driver.ctsu.p_ctsu_settings" value="g_ctsu_common_sfrs"/>
+      <property id="module.driver.ctsu.p_sensor_settings" value="g_ctsu_sensor_settings"/>
+      <property id="module.driver.ctsu.p_sensor_data" value="g_ctsu_data_buffer"/>
+      <property id="module.driver.ctsu.pclkb_hz" value="24000000"/>
+      <property id="module.driver.ctsu.p_callback" value="NULL"/>
+      <property id="module.driver.ctsu.ts00" value="module.driver.ctsu.ts00.receive"/>
+      <property id="module.driver.ctsu.ts01" value="module.driver.ctsu.ts01.receive"/>
+      <property id="module.driver.ctsu.ts02" value="module.driver.ctsu.ts02.unused"/>
+      <property id="module.driver.ctsu.ts03" value="module.driver.ctsu.ts03.unused"/>
+      <property id="module.driver.ctsu.ts04" value="module.driver.ctsu.ts04.unused"/>
+      <property id="module.driver.ctsu.ts05" value="module.driver.ctsu.ts05.unused"/>
+      <property id="module.driver.ctsu.ts06" value="module.driver.ctsu.ts06.unused"/>
+      <property id="module.driver.ctsu.ts07" value="module.driver.ctsu.ts07.unused"/>
+      <property id="module.driver.ctsu.ts08" value="module.driver.ctsu.ts08.unused"/>
+      <property id="module.driver.ctsu.ts09" value="module.driver.ctsu.ts09.unused"/>
+      <property id="module.driver.ctsu.ts10" value="module.driver.ctsu.ts10.unused"/>
+      <property id="module.driver.ctsu.ts11" value="module.driver.ctsu.ts11.unused"/>
+      <property id="module.driver.ctsu.ts12" value="module.driver.ctsu.ts12.unused"/>
+      <property id="module.driver.ctsu.ts13" value="module.driver.ctsu.ts13.unused"/>
+      <property id="module.driver.ctsu.ts14" value="module.driver.ctsu.ts14.unused"/>
+      <property id="module.driver.ctsu.ts15" value="module.driver.ctsu.ts15.unused"/>
+      <property id="module.driver.ctsu.ts16" value="module.driver.ctsu.ts16.unused"/>
+      <property id="module.driver.ctsu.ts17" value="module.driver.ctsu.ts17.unused"/>
+      <property id="module.driver.ctsu.ts18" value="module.driver.ctsu.ts18.transmit"/>
+      <property id="module.driver.ctsu.ts19" value="module.driver.ctsu.ts19.transmit"/>
+      <property id="module.driver.ctsu.ts20" value="module.driver.ctsu.ts20.unused"/>
+      <property id="module.driver.ctsu.ts21" value="module.driver.ctsu.ts21.unused"/>
+      <property id="module.driver.ctsu.ts22" value="module.driver.ctsu.ts22.unused"/>
+      <property id="module.driver.ctsu.ts23" value="module.driver.ctsu.ts23.unused"/>
+      <property id="module.driver.ctsu.ts24" value="module.driver.ctsu.ts24.unused"/>
+      <property id="module.driver.ctsu.ts25" value="module.driver.ctsu.ts25.unused"/>
+      <property id="module.driver.ctsu.ts26" value="module.driver.ctsu.ts26.unused"/>
+      <property id="module.driver.ctsu.ts27" value="module.driver.ctsu.ts27.unused"/>
+      <property id="module.driver.ctsu.ts28" value="module.driver.ctsu.ts28.unused"/>
+      <property id="module.driver.ctsu.ts29" value="module.driver.ctsu.ts29.unused"/>
+      <property id="module.driver.ctsu.ts30" value="module.driver.ctsu.ts30.unused"/>
+      <property id="module.driver.ctsu.ts31" value="module.driver.ctsu.ts31.unused"/>
+      <property id="module.driver.ctsu.ts32" value="module.driver.ctsu.ts32.unused"/>
+      <property id="module.driver.ctsu.ts33" value="module.driver.ctsu.ts33.unused"/>
+      <property id="module.driver.ctsu.ts34" value="module.driver.ctsu.ts34.unused"/>
+      <property id="module.driver.ctsu.ts35" value="module.driver.ctsu.ts35.unused"/>
+      <property id="module.driver.ctsu.sep1" value="module.driver.ctsu.sep1.none"/>
+    </module>
+    <module id="module.driver.ctsu_sensor_on_ctsu.733469444">
+      <property id="module.driver.ctsu_sensor.name" value="CTSU_SENSOR_0"/>
+      <property id="module.driver.ctsu_sensor.index" value="0"/>
+      <property id="module.driver.ctsu_sensor.rx" value="module.driver.ctsu_sensor.rx.00"/>
+      <property id="module.driver.ctsu_sensor.tx" value="module.driver.ctsu_sensor.tx.19"/>
+      <property id="module.driver.ctsu_sensor.sep0" value="module.driver.ctsu_sensor.sep0.none"/>
+      <property id="module.driver.ctsu_sensor.ctsussdiv" value="0"/>
+      <property id="module.driver.ctsu_sensor.ctsusnum" value="7"/>
+      <property id="module.driver.ctsu_sensor.ctsuicog" value="1"/>
+      <property id="module.driver.ctsu_sensor.ctsusdpa" value="2"/>
+      <property id="module.driver.ctsu_sensor.ctsuricoa" value="0x3F"/>
+      <property id="module.driver.ctsu_sensor.ctsuso" value="380"/>
+      <property id="module.driver.ctsu_sensor.sep1" value="module.driver.ctsu_sensor.sep1.none"/>
+      <property id="module.driver.ctsu_sensor.threshold" value="3283"/>
+      <property id="module.driver.ctsu_sensor.hysteresis" value="164"/>
+      <property id="module.driver.ctsu_sensor.dtouch" value="3"/>
+      <property id="module.driver.ctsu_sensor.drelease" value="3"/>
+      <property id="module.driver.ctsu_sensor.sep2" value="module.driver.ctsu_sensor.sep2.none"/>
+      <property id="module.driver.ctsu_sensor.drift" value="1000"/>
+      <property id="module.driver.ctsu_sensor.sep3" value="module.driver.ctsu_sensor.sep3.none"/>
+      <property id="module.driver.ctsu_sensor.offset_interval" value="1000"/>
+      <property id="module.driver.ctsu_sensor.offset_thresh" value="100"/>
+    </module>
+    <module id="module.driver.ctsu_sensor_on_ctsu.484371035">
+      <property id="module.driver.ctsu_sensor.name" value="CTSU_SENSOR_2"/>
+      <property id="module.driver.ctsu_sensor.index" value="2"/>
+      <property id="module.driver.ctsu_sensor.rx" value="module.driver.ctsu_sensor.rx.00"/>
+      <property id="module.driver.ctsu_sensor.tx" value="module.driver.ctsu_sensor.tx.18"/>
+      <property id="module.driver.ctsu_sensor.sep0" value="module.driver.ctsu_sensor.sep0.none"/>
+      <property id="module.driver.ctsu_sensor.ctsussdiv" value="0"/>
+      <property id="module.driver.ctsu_sensor.ctsusnum" value="7"/>
+      <property id="module.driver.ctsu_sensor.ctsuicog" value="1"/>
+      <property id="module.driver.ctsu_sensor.ctsusdpa" value="2"/>
+      <property id="module.driver.ctsu_sensor.ctsuricoa" value="0x3F"/>
+      <property id="module.driver.ctsu_sensor.ctsuso" value="380"/>
+      <property id="module.driver.ctsu_sensor.sep1" value="module.driver.ctsu_sensor.sep1.none"/>
+      <property id="module.driver.ctsu_sensor.threshold" value="3315"/>
+      <property id="module.driver.ctsu_sensor.hysteresis" value="165"/>
+      <property id="module.driver.ctsu_sensor.dtouch" value="3"/>
+      <property id="module.driver.ctsu_sensor.drelease" value="3"/>
+      <property id="module.driver.ctsu_sensor.sep2" value="module.driver.ctsu_sensor.sep2.none"/>
+      <property id="module.driver.ctsu_sensor.drift" value="1000"/>
+      <property id="module.driver.ctsu_sensor.sep3" value="module.driver.ctsu_sensor.sep3.none"/>
+      <property id="module.driver.ctsu_sensor.offset_interval" value="1000"/>
+      <property id="module.driver.ctsu_sensor.offset_thresh" value="100"/>
+    </module>
+    <module id="module.driver.ctsu_sensor_on_ctsu.469363344">
+      <property id="module.driver.ctsu_sensor.name" value="CTSU_SENSOR_3"/>
+      <property id="module.driver.ctsu_sensor.index" value="3"/>
+      <property id="module.driver.ctsu_sensor.rx" value="module.driver.ctsu_sensor.rx.01"/>
+      <property id="module.driver.ctsu_sensor.tx" value="module.driver.ctsu_sensor.tx.18"/>
+      <property id="module.driver.ctsu_sensor.sep0" value="module.driver.ctsu_sensor.sep0.none"/>
+      <property id="module.driver.ctsu_sensor.ctsussdiv" value="0"/>
+      <property id="module.driver.ctsu_sensor.ctsusnum" value="7"/>
+      <property id="module.driver.ctsu_sensor.ctsuicog" value="1"/>
+      <property id="module.driver.ctsu_sensor.ctsusdpa" value="2"/>
+      <property id="module.driver.ctsu_sensor.ctsuricoa" value="0x3f"/>
+      <property id="module.driver.ctsu_sensor.ctsuso" value="380"/>
+      <property id="module.driver.ctsu_sensor.sep1" value="module.driver.ctsu_sensor.sep1.none"/>
+      <property id="module.driver.ctsu_sensor.threshold" value="3591"/>
+      <property id="module.driver.ctsu_sensor.hysteresis" value="179"/>
+      <property id="module.driver.ctsu_sensor.dtouch" value="3"/>
+      <property id="module.driver.ctsu_sensor.drelease" value="3"/>
+      <property id="module.driver.ctsu_sensor.sep2" value="module.driver.ctsu_sensor.sep2.none"/>
+      <property id="module.driver.ctsu_sensor.drift" value="1000"/>
+      <property id="module.driver.ctsu_sensor.sep3" value="module.driver.ctsu_sensor.sep3.none"/>
+      <property id="module.driver.ctsu_sensor.offset_interval" value="1000"/>
+      <property id="module.driver.ctsu_sensor.offset_thresh" value="100"/>
+    </module>
+    <module id="module.driver.ctsu_sensor_on_ctsu.1958965308">
+      <property id="module.driver.ctsu_sensor.name" value="CTSU_SENSOR_1"/>
+      <property id="module.driver.ctsu_sensor.index" value="1"/>
+      <property id="module.driver.ctsu_sensor.rx" value="module.driver.ctsu_sensor.rx.01"/>
+      <property id="module.driver.ctsu_sensor.tx" value="module.driver.ctsu_sensor.tx.19"/>
+      <property id="module.driver.ctsu_sensor.sep0" value="module.driver.ctsu_sensor.sep0.none"/>
+      <property id="module.driver.ctsu_sensor.ctsussdiv" value="0"/>
+      <property id="module.driver.ctsu_sensor.ctsusnum" value="7"/>
+      <property id="module.driver.ctsu_sensor.ctsuicog" value="1"/>
+      <property id="module.driver.ctsu_sensor.ctsusdpa" value="2"/>
+      <property id="module.driver.ctsu_sensor.ctsuricoa" value="0x3F"/>
+      <property id="module.driver.ctsu_sensor.ctsuso" value="380"/>
+      <property id="module.driver.ctsu_sensor.sep1" value="module.driver.ctsu_sensor.sep1.none"/>
+      <property id="module.driver.ctsu_sensor.threshold" value="3390"/>
+      <property id="module.driver.ctsu_sensor.hysteresis" value="169"/>
+      <property id="module.driver.ctsu_sensor.dtouch" value="3"/>
+      <property id="module.driver.ctsu_sensor.drelease" value="3"/>
+      <property id="module.driver.ctsu_sensor.sep2" value="module.driver.ctsu_sensor.sep2.none"/>
+      <property id="module.driver.ctsu_sensor.drift" value="1000"/>
+      <property id="module.driver.ctsu_sensor.sep3" value="module.driver.ctsu_sensor.sep3.none"/>
+      <property id="module.driver.ctsu_sensor.offset_interval" value="1000"/>
+      <property id="module.driver.ctsu_sensor.offset_thresh" value="100"/>
+    </module>
+    <module id="module.driver.touch_on_touch.1088228632">
+      <property id="module.driver.touch.name" value="g_touch0_on_g_ctsu"/>
+      <property id="module.driver.touch.p_binary_result" value="g_touch0_on_g_ctsu_binary"/>
+      <property id="module.driver.touch.on_limit" value="65535"/>
+      <property id="module.driver.touch.max_touched_sensors" value="1"/>
+      <property id="module.driver.touch.p_callback" value="NULL"/>
+    </module>
+    <module id="module.framework.sf_touch_button_v2.334758670">
+      <property id="module.framework.sf_touch_button.name" value="Button_RX00_on_g_touch0_on_g_ctsu"/>
+      <property id="module.framework.sf_touch_button.press_enable" value="module.framework.sf_touch_button.press_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.release_enable" value="module.framework.sf_touch_button.release_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.p_callback" value="touch_button_common_callback"/>
+    </module>
+    <module id="module.framework.sf_touch_button_v2.1470950858">
+      <property id="module.framework.sf_touch_button.name" value="Button_RX01_on_g_touch0_on_g_ctsu"/>
+      <property id="module.framework.sf_touch_button.press_enable" value="module.framework.sf_touch_button.press_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.release_enable" value="module.framework.sf_touch_button.release_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.p_callback" value="touch_button_common_callback"/>
+    </module>
+    <module id="module.framework.sf_touch_button_v2.2102205843">
+      <property id="module.framework.sf_touch_button.name" value="Button_RX02_on_g_touch0_on_g_ctsu"/>
+      <property id="module.framework.sf_touch_button.press_enable" value="module.framework.sf_touch_button.press_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.release_enable" value="module.framework.sf_touch_button.release_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.p_callback" value="touch_button_common_callback"/>
+    </module>
+    <module id="module.framework.sf_touch_button_v2.872986253">
+      <property id="module.framework.sf_touch_button.name" value="Button_RX03_on_g_touch0_on_g_ctsu"/>
+      <property id="module.framework.sf_touch_button.press_enable" value="module.framework.sf_touch_button.press_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.release_enable" value="module.framework.sf_touch_button.release_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.p_callback" value="touch_button_common_callback"/>
+    </module>
+    <module id="module.driver.timer_on_agt.1736043722">
+      <property id="module.driver.timer.name" value="g_timer0"/>
+      <property id="module.driver.timer.channel" value="0"/>
+      <property id="module.driver.timer.mode" value="module.driver.timer.mode.mode_periodic"/>
+      <property id="module.driver.timer.period" value="500"/>
+      <property id="module.driver.timer.unit" value="module.driver.timer.unit.unit_period_msec"/>
+      <property id="module.driver.timer.autostart" value="module.driver.timer.autostart.true"/>
+      <property id="module.driver.timer.count_source" value="module.driver.timer.count_source.clock_loco"/>
+      <property id="module.driver.timer.agto_output_enabled" value="module.driver.timer.agto_output_enabled.false"/>
+      <property id="module.driver.timer.agtio_output_enabled" value="module.driver.timer.agtio_output_enabled.false"/>
+      <property id="module.driver.timer.output_inverted" value="module.driver.timer.output_inverted.false"/>
+      <property id="module.driver.timer.agtoa_output_enable" value="module.driver.timer.agtoa_output_enable.false"/>
+      <property id="module.driver.timer.agtob_output_enable" value="module.driver.timer.agtob_output_enable.false"/>
+      <property id="module.driver.timer.p_callback" value="agt_cb"/>
+      <property id="module.driver.timer.irq_ipl" value="board.icu.common.irq.priority3"/>
+    </module>
+    <module id="module.framework.sf_el_ux_comms_v2.266843260">
+      <property id="module.framework.sf_comms.name" value="g_sf_comms0"/>
+      <property id="module.framework.sf_comms.init_function" value="sf_comms_init0"/>
+      <property id="module.framework.sf_comms.init" value="module.framework.sf_comms.init.enable"/>
+    </module>
+    <module id="module.el.ux_device_class_cdc_acm_v2.1713048925">
+      <property id="module.el.ux_device_class_cdc_acm_v2.name" value="g_ux_device_class_cdc_acm0"/>
+      <property id="module.el.ux_device_class_cdc_acm_v2.pfunc_activate" value="ux_cdc_device0_instance_activate"/>
+      <property id="module.el.ux_device_class_cdc_acm_v2.pfunc_deactivate" value="ux_cdc_device0_instance_deactivate"/>
+      <property id="module.el.ux_device_class_cdc_acm_v2.init_function" value="ux_device_class_cdc_acm_init0"/>
+      <property id="module.el.ux_device_class_cdc_acm_v2.init" value="module.el.ux_device_class_cdc_acm_v2.init.enable"/>
+    </module>
+    <module id="module.el.ux_device.1950245356">
+      <property id="module.el.ux_device.idVendor" value="0x045B"/>
+      <property id="module.el.ux_device.idProduct" value="0x0238"/>
+      <property id="module.el.ux_device.bcdDevice" value="0x0000"/>
+      <property id="module.el.ux_device.iManufacturer" value="0x00"/>
+      <property id="module.el.ux_device.iProduct" value="0x00"/>
+      <property id="module.el.ux_device.iSerialNumber" value="0x00"/>
+      <property id="module.el.ux_device.bDeviceClass" value="module.el.ux_device.bDeviceClass.misc"/>
+      <property id="module.el.ux_device.iConfiguration" value="0x00"/>
+      <property id="module.el.ux_device.wTotalLength" value="0x00"/>
+      <property id="module.el.ux_device.bNumInterfaces" value="0x00"/>
+      <property id="module.el.ux_device.bmAttributes_bit6" value="module.el.ux_device.bmAttributes_bit6.enable"/>
+      <property id="module.el.ux_device.bmAttributes_bit5" value="module.el.ux_device.bmAttributes_bit5.disable"/>
+      <property id="module.el.ux_device.bMaxPower" value="50"/>
+      <property id="module.el.ux_device.language_code" value="0x0409"/>
+      <property id="module.el.ux_device.string_descriptor.name" value="NULL"/>
+      <property id="module.el.ux_device.string_descriptor.index" value="0"/>
+      <property id="module.el.ux_device.language_descriptor.name" value="NULL"/>
+      <property id="module.el.ux_device.language_descriptor.number" value="0"/>
+      <property id="module.el.ux_device.init_function" value="ux_device_init0"/>
+      <property id="module.el.ux_device.init" value="module.el.ux_device.init.enable"/>
+    </module>
+    <module id="module.el.ux_v2.1844469730">
+      <property id="module.el.ux_v2.pool_memory_name" value="g_ux_pool_memory"/>
+      <property id="module.el.ux_v2.pool_memory_size" value="18432"/>
+      <property id="module.el.ux_v2.system_change_function" value="NULL"/>
+      <property id="module.el.ux_v2.init_function" value="ux_common_init0"/>
+      <property id="module.el.ux_v2.init" value="module.el.ux_v2.init.enable"/>
+    </module>
+    <module id="module.el.ux.interface_descriptor_cdcacm.cdc_acm.1882252655">
+      <property id="module.el.ux.interface_descriptor_cdcacm.name" value="g_usb_interface_desc_cdcacm_0"/>
+      <property id="module.el.ux.interface_descriptor_cdcacm.bInterfaceNumber_comm" value="0x00"/>
+      <property id="module.el.ux.interface_descriptor_cdcacm.ep_interrupt" value="module.el.ux.interface_descriptor_cdcacm.ep_interrupt.ep3"/>
+      <property id="module.el.ux.interface_descriptor_cdcacm.bInterval" value="0x0F"/>
+      <property id="module.el.ux.interface_descriptor_cdcacm.bInterfaceNumber_data" value="0x01"/>
+      <property id="module.el.ux.interface_descriptor_cdcacm.ep_bulk_out" value="module.el.ux.interface_descriptor_cdcacm.ep_bulk_out.ep1"/>
+      <property id="module.el.ux.interface_descriptor_cdcacm.ep_bulk_in" value="module.el.ux.interface_descriptor_cdcacm.ep_bulk_in.ep2"/>
+      <property id="module.el.ux.interface_descriptor_cdcacm.iInterface_comm" value="0x00"/>
+      <property id="module.el.ux.interface_descriptor_cdcacm.iInterface_data" value="0x00"/>
+    </module>
+    <module id="module.framework.sf_el_ux_dcd_fs.333782983">
+      <property id="module.framework.sf_el_ux_dcd_fs.name" value="g_sf_el_ux_dcd_fs_0"/>
+      <property id="module.framework.sf_el_ux_dcd_fs.hw_address" value="R_USBFS_BASE"/>
+    </module>
+    <module id="module.framework.sf_ctsu_comm.1463282223">
+      <property id="module.framework.sf_ctsu_comm.name" value="g_sf_ctsu_comm0"/>
+      <property id="module.framework.sf_ctsu_comm.count" value="0"/>
+      <property id="module.framework.sf_ctsu_comm.comms" value="g_sf_comms0"/>
+    </module>
+    <context id="_hal.0">
+      <stack module="module.driver.elc_on_elc.0"/>
+      <stack module="module.driver.ioport_on_ioport.0"/>
+      <stack module="module.driver.cgc_on_cgc.0"/>
+      <stack module="module.driver.fmi_on_fmi.0"/>
+    </context>
+    <context id="rtos.threadx.thread.433007238">
+      <property id="_symbol" value="ctsu_thread"/>
+      <property id="rtos.threadx.thread.name" value="CTSU Thread"/>
+      <property id="rtos.threadx.thread.stack" value="1024"/>
+      <property id="rtos.threadx.thread.priority" value="1"/>
+      <property id="rtos.threadx.thread.autostart" value="rtos.threadx.thread.autostart.enabled"/>
+      <property id="rtos.threadx.thread.timeslice" value="1"/>
+      <stack module="module.framework.sf_touch_button_v2.334758670">
+        <stack module="module.driver.touch_on_touch.1088228632" requires="module.framework.sf_touch_button.requires.touch">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.touch.requires.ctsu"/>
+        </stack>
+        <stack module="module.driver.ctsu_sensor_on_ctsu.733469444" requires="module.framework.sf_touch_button.requires.ctsu_sensor">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.ctsu_sensor.requires.ctsu"/>
+        </stack>
+      </stack>
+      <stack module="module.framework.sf_touch_button_v2.1470950858">
+        <stack module="module.driver.touch_on_touch.1088228632" requires="module.framework.sf_touch_button.requires.touch">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.touch.requires.ctsu"/>
+        </stack>
+        <stack module="module.driver.ctsu_sensor_on_ctsu.1958965308" requires="module.framework.sf_touch_button.requires.ctsu_sensor">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.ctsu_sensor.requires.ctsu"/>
+        </stack>
+      </stack>
+      <stack module="module.framework.sf_touch_button_v2.2102205843">
+        <stack module="module.driver.touch_on_touch.1088228632" requires="module.framework.sf_touch_button.requires.touch">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.touch.requires.ctsu"/>
+        </stack>
+        <stack module="module.driver.ctsu_sensor_on_ctsu.484371035" requires="module.framework.sf_touch_button.requires.ctsu_sensor">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.ctsu_sensor.requires.ctsu"/>
+        </stack>
+      </stack>
+      <stack module="module.framework.sf_touch_button_v2.872986253">
+        <stack module="module.driver.touch_on_touch.1088228632" requires="module.framework.sf_touch_button.requires.touch">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.touch.requires.ctsu"/>
+        </stack>
+        <stack module="module.driver.ctsu_sensor_on_ctsu.469363344" requires="module.framework.sf_touch_button.requires.ctsu_sensor">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.ctsu_sensor.requires.ctsu"/>
+        </stack>
+      </stack>
+      <object id="rtos.threadx.object.flags.1411783259">
+        <property id="rtos.threadx.object.flags.name" value="New Event Flags"/>
+        <property id="rtos.threadx.object.flags.symbol" value="ctsu_event_flags"/>
+      </object>
+      <object id="rtos.threadx.object.flags.1417549731">
+        <property id="rtos.threadx.object.flags.name" value="New Event Flags"/>
+        <property id="rtos.threadx.object.flags.symbol" value="g_new_event_flags0"/>
+      </object>
+    </context>
+    <context id="rtos.threadx.thread.1892471250">
+      <property id="_symbol" value="usb_monitor_thread"/>
+      <property id="rtos.threadx.thread.name" value="USB_monitor_ Thread"/>
+      <property id="rtos.threadx.thread.stack" value="1024"/>
+      <property id="rtos.threadx.thread.priority" value="1"/>
+      <property id="rtos.threadx.thread.autostart" value="rtos.threadx.thread.autostart.enabled"/>
+      <property id="rtos.threadx.thread.timeslice" value="1"/>
+      <stack module="module.driver.timer_on_agt.1736043722"/>
+      <stack module="module.framework.sf_el_ux_comms_v2.266843260">
+        <stack module="module.el.ux_device_class_cdc_acm_v2.1713048925" requires="module.framework.sf_el_ux_comms_v2.requires.ux_device_class_cdc_acm_v2">
+          <stack module="module.el.ux_device.1950245356" requires="module.el.ux_device_class_cdc_acm_v2.requires.ux_device">
+            <stack module="module.framework.sf_el_ux_dcd_fs.333782983" requires="module.el.ux_device.requires.sf_el_ux_dcd"/>
+            <stack module="module.el.ux_v2.1844469730" requires="module.el.ux_device.requires.ux_v2"/>
+          </stack>
+          <stack module="module.el.ux.interface_descriptor_cdcacm.cdc_acm.1882252655" requires="module.el.ux_device_class_cdc_acm_v2.requires.interface_descriptor_cdcacm"/>
+        </stack>
+      </stack>
+      <stack module="module.framework.sf_ctsu_comm.1463282223">
+        <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.framework.sf_ctsu_comm.requires.ctsu"/>
+        <stack module="module.driver.touch_on_touch.1088228632" requires="module.framework.sf_ctsu_comm.requires.touch">
+          <stack module="module.driver.ctsu_on_ctsu.2079136275" requires="module.driver.touch.requires.ctsu"/>
+        </stack>
+      </stack>
+      <object id="rtos.threadx.object.flags.1736623467">
+        <property id="rtos.threadx.object.flags.name" value="New Event Flags"/>
+        <property id="rtos.threadx.object.flags.symbol" value="g_s3a7_st_flags"/>
+      </object>
+    </context>
+    <config id="config.framework.sf_ctsu_comm">
+      <property id="config.framework.sf_ctsu_comm.param_check" value="config.framework.sf_ctsu_comm.param_check.default"/>
+      <property id="config.framework.sf_ctsu_comm.mode" value="config.framework.sf_ctsu_comm.mode.monitor"/>
+      <property id="config.framework.sf_ctsu_comm.connection" value="config.framework.sf_ctsu_comm.connection.usb"/>
+      <property id="config.framework.sf_ctsu_comm.check_size" value="2"/>
+      <property id="config.framework.sf_ctsu_comm.header_size" value="3"/>
+      <property id="config.framework.sf_ctsu_comm.priority" value="1"/>
+      <property id="config.framework.sf_ctsu_comm.stack" value="1024"/>
+    </config>
+    <config id="config.el.ux_v2"/>
+    <config id="config.framework.sf_touch_button_v2">
+      <property id="config.framework.sf_touch_button_v2.param_checking_enable" value="config.framework.sf_touch_button_v2.param_checking_enable.enabled"/>
+      <property id="config.framework.sf_touch_button_v2.max_count" value="16"/>
+      <property id="config.framework.sf_touch_button_v2.auto_init" value="config.framework.sf_touch_button_v2.auto_init.enabled"/>
+    </config>
+    <config id="config.driver.ctsu_v2">
+      <property id="config.driver.ctsu_v2.param_checking_enable" value="config.driver.ctsu_v2.param_checking_enable.default"/>
+      <property id="config.driver.ctsu_v2.correction" value="config.driver.ctsu_v2.correction.disabled"/>
+      <property id="config.driver.ctsu_v2.calibration" value="config.driver.ctsu_v2.calibration.enabled"/>
+      <property id="config.driver.ctsu_v2.write_ipl" value="board.icu.common.irq.priority2"/>
+      <property id="config.driver.ctsu_v2.read_ipl" value="board.icu.common.irq.priority2"/>
+      <property id="config.driver.ctsu_v2.end_ipl" value="board.icu.common.irq.priority2"/>
+    </config>
+    <config id="config.driver.ctsu_sensor"/>
+    <config id="config.framework.sf_el_ux_comms_v2">
+      <property id="config.framework.sf_comms.param_checking_enable" value="config.framework.sf_comms.param_checking_enable.bsp"/>
+      <property id="config.framework.sf_comms.read_size" value="128"/>
+      <property id="config.framework.sf_comms.timeout" value="1000"/>
+    </config>
+    <config id="config.driver.cgc">
+      <property id="config.driver.cgc.param_checking_enable" value="config.driver.cgc.param_checking_enable.bsp"/>
+      <property id="config.driver.cgc.main_osc_wait" value="config.driver.cgc.main_osc_wait.wait_8163"/>
+      <property id="config.driver.cgc.main_osc_clock_source" value="config.driver.cgc.main_osc_clock_source.crystal"/>
+      <property id="config.driver.cgc.osc_stop_det_used" value="config.driver.cgc.osc_stop_det_used.enabled"/>
+      <property id="config.driver.cgc.subclock_drive" value="config.driver.cgc.subclock_drive.standard"/>
+      <property id="config.driver.cgc.low_voltage_mode" value="config.driver.cgc.low_voltage_mode.disabled"/>
+    </config>
+    <config id="config.driver.ioport">
+      <property id="config.driver.ioport.checking" value="config.driver.ioport.checking.system"/>
+    </config>
+    <config id="config.threadx.thread"/>
+    <config id="config.framework.sf_el_ux">
+      <property id="config.framework.sf_el_ux.VBUSENpin_logic" value="config.framework.sf_el_ux.VBUSENpin_logic.active_high"/>
+      <property id="config.framework.sf_el_ux.hs_irq_ipl" value="board.icu.common.irq.disabled"/>
+      <property id="config.framework.sf_el_ux.fs_irq_ipl" value="board.icu.common.irq.disabled"/>
+    </config>
+    <config id="config.framework.sf_el_ux_hcd_hs">
+      <property id="config.framework.sf_el_ux_hcd_hs.irq_ipl" value="board.icu.common.irq.disabled"/>
+      <property id="config.framework.sf_el_ux_hcd_hs.fifo_size" value="config.framework.sf_el_ux_hcd_hs.fifo_size.normal"/>
+      <property id="config.framework.sf_el_ux_hcd_hs.VBUSENpin_logic" value="config.framework.sf_el_ux_hcd_hs.VBUSENpin_logic.active_high"/>
+      <property id="config.framework.sf_el_ux_hcd_hs.hs_bit" value="config.framework.sf_el_ux_hcd_hs.hs_bit.bitset_high"/>
+    </config>
+    <config id="config.framework.sf_el_ux_hcd_fs">
+      <property id="config.framework.sf_el_ux_hcd_fs.irq_ipl" value="board.icu.common.irq.disabled"/>
+      <property id="config.framework.sf_el_ux_hcd_fs.VBUSENpin_logic" value="config.framework.sf_el_ux_hcd_fs.VBUSENpin_logic.active_high"/>
+      <property id="config.framework.sf_el_ux_hcd_fs.VCC_LDO_Regulator" value="config.framework.sf_el_ux_hcd_fs.VCC_LDO_Regulator.disabled"/>
+    </config>
+    <config id="config.framework.sf_el_ux_dcd_hs">
+      <property id="config.framework.sf_el_ux_dcd_hs.irq_ipl" value="board.icu.common.irq.disabled"/>
+    </config>
+    <config id="config.framework.sf_el_ux_dcd_fs">
+      <property id="config.framework.sf_el_ux_dcd_fs.irq_ipl" value="board.icu.common.irq.priority1"/>
+      <property id="config.framework.sf_el_ux_dcd_fs.VCC_LDO_Regulator" value="config.framework.sf_el_ux_dcd_fs.VCC_LDO_Regulator.disabled"/>
+    </config>
+    <config id="config.driver.fmi">
+      <property id="config.driver.fmi.param_checking_enable" value="config.driver.fmi.param_checking_enable.bsp"/>
+      <property id="config.driver.fmi.custom_base_address_symbol" value="g_fmi_data"/>
+      <property id="config.driver.fmi.part_number_mask" value="0xFE00"/>
+    </config>
+    <config id="config.driver.touch_v2">
+      <property id="config.driver.touch_v2.param_checking_enable" value="config.driver.touch_v2.param_checking_enable.enabled"/>
+      <property id="config.driver.touch_v2.drift_non_touched" value="config.driver.touch_v2.drift_non_touched.enabled"/>
+      <property id="config.driver.touch_v2.filter_depth" value="config.driver.touch_v2.filter_depth.d1"/>
+      <property id="config.driver.touch_v2.variable_drift" value="config.driver.touch_v2.variable_drift.enabled"/>
+      <property id="config.driver.touch_v2.mtr_type" value="config.driver.touch_v2.mtr_type.t0"/>
+      <property id="config.driver.touch_v2.max_open" value="1"/>
+      <property id="config.driver.touch_v2.max_upper_cb" value="1"/>
+      <property id="config.driver.touch_v2.max_err" value="1"/>
+    </config>
+    <config id="config.driver.elc">
+      <property id="config.driver.elc.checking" value="config.driver.elc.checking.system"/>
+    </config>
+    <config id="config.driver.agt">
+      <property id="config.driver.agt.param_checking_enable" value="config.driver.agt.param_checking_enable.bsp"/>
+    </config>
+  </synergyModuleConfiguration>
+  <synergyPinConfiguration>
+    <pincfg active="true" name="S3A7_AE_CAP1.pincfg" symbol="g_bsp_pin_cfg"/>
+  </synergyPinConfiguration>
+</synergyConfiguration>

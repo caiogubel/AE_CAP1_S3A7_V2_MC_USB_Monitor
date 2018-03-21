@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <synergyConfiguration version="3">
+                <synergyModuleConfiguration>
+             
+    <module id="module.driver.ctsu_on_ctsu.1212779911011">
+      <property id="module.driver.ctsu.name" value="g_ctsu"/>
+      <property id="module.driver.ctsu.pclkb_div" value="module.driver.ctsu.pclkb_div.div_1"/>
+      <property id="module.driver.ctsu.mode" value="module.driver.ctsu.mode.self"/>
+      <property id="module.driver.ctsu.txvsel" value="module.driver.ctsu.txvsel.vcc"/>
+      <property id="module.driver.ctsu.ctsusoff" value="module.driver.ctsu.ctsusoff.enabled"/>
+      <property id="module.driver.ctsu.data" value="module.driver.data.workbench"/>
+      <property id="module.driver.ctsu.p_ctsu_settings" value="g_ctsu_common_sfrs"/>
+      <property id="module.driver.ctsu.p_sensor_settings" value="g_ctsu_sensor_settings"/>
+      <property id="module.driver.ctsu.p_sensor_data" value="g_ctsu_data_buffer"/>
+      <property id="module.driver.ctsu.pclkb_hz" value="24000000"/>
+      <property id="module.driver.ctsu.p_callback" value="NULL"/>
+      <property id="module.driver.ctsu.ts00" value="module.driver.ctsu.ts00.receive"/>
+      <property id="module.driver.ctsu.ts01" value="module.driver.ctsu.ts01.unused"/>
+      <property id="module.driver.ctsu.ts02" value="module.driver.ctsu.ts02.unused"/>
+      <property id="module.driver.ctsu.ts03" value="module.driver.ctsu.ts03.unused"/>
+      <property id="module.driver.ctsu.ts04" value="module.driver.ctsu.ts04.unused"/>
+      <property id="module.driver.ctsu.ts05" value="module.driver.ctsu.ts05.unused"/>
+      <property id="module.driver.ctsu.ts06" value="module.driver.ctsu.ts06.unused"/>
+      <property id="module.driver.ctsu.ts07" value="module.driver.ctsu.ts07.unused"/>
+      <property id="module.driver.ctsu.ts08" value="module.driver.ctsu.ts08.unused"/>
+      <property id="module.driver.ctsu.ts09" value="module.driver.ctsu.ts09.unused"/>
+      <property id="module.driver.ctsu.ts10" value="module.driver.ctsu.ts10.unused"/>
+      <property id="module.driver.ctsu.ts11" value="module.driver.ctsu.ts11.unused"/>
+      <property id="module.driver.ctsu.ts12" value="module.driver.ctsu.ts12.unused"/>
+      <property id="module.driver.ctsu.ts13" value="module.driver.ctsu.ts13.unused"/>
+      <property id="module.driver.ctsu.ts14" value="module.driver.ctsu.ts14.unused"/>
+      <property id="module.driver.ctsu.ts15" value="module.driver.ctsu.ts15.unused"/>
+      <property id="module.driver.ctsu.ts16" value="module.driver.ctsu.ts16.unused"/>
+      <property id="module.driver.ctsu.ts17" value="module.driver.ctsu.ts17.unused"/>
+      <property id="module.driver.ctsu.ts18" value="module.driver.ctsu.ts18.unused"/>
+      <property id="module.driver.ctsu.ts19" value="module.driver.ctsu.ts19.unused"/>
+      <property id="module.driver.ctsu.ts20" value="module.driver.ctsu.ts20.unused"/>
+      <property id="module.driver.ctsu.ts21" value="module.driver.ctsu.ts21.unused"/>
+      <property id="module.driver.ctsu.ts22" value="module.driver.ctsu.ts22.unused"/>
+      <property id="module.driver.ctsu.ts23" value="module.driver.ctsu.ts23.unused"/>
+      <property id="module.driver.ctsu.ts24" value="module.driver.ctsu.ts24.unused"/>
+      <property id="module.driver.ctsu.ts25" value="module.driver.ctsu.ts25.unused"/>
+      <property id="module.driver.ctsu.ts26" value="module.driver.ctsu.ts26.unused"/>
+      <property id="module.driver.ctsu.ts27" value="module.driver.ctsu.ts27.unused"/>
+      <property id="module.driver.ctsu.ts28" value="module.driver.ctsu.ts28.unused"/>
+      <property id="module.driver.ctsu.ts29" value="module.driver.ctsu.ts29.unused"/>
+      <property id="module.driver.ctsu.ts30" value="module.driver.ctsu.ts30.unused"/>
+      <property id="module.driver.ctsu.ts31" value="module.driver.ctsu.ts31.unused"/>
+      <property id="module.driver.ctsu.ts32" value="module.driver.ctsu.ts32.unused"/>
+      <property id="module.driver.ctsu.ts33" value="module.driver.ctsu.ts33.unused"/>
+      <property id="module.driver.ctsu.ts34" value="module.driver.ctsu.ts34.unused"/>
+      <property id="module.driver.ctsu.ts35" value="module.driver.ctsu.ts35.unused"/>
+      <property id="module.driver.ctsu.sep1" value="module.driver.ctsu.sep1.none"/>
+    </module>
+    <context id="_context.73313261">
+        <stack module="module.driver.ctsu_on_ctsu.1212779911011"/>
+    </context>
+    
+
+    <module id="module.driver.ctsu_sensor_on_ctsu.8039641348823">
+      <property id="module.driver.ctsu_sensor.name" value="CTSU_SENSOR_0"/>
+      <property id="module.driver.ctsu_sensor.index" value="0"/>
+      <property id="module.driver.ctsu_sensor.rx" value="module.driver.ctsu_sensor.rx.00"/>
+      <property id="module.driver.ctsu_sensor.tx" value="module.driver.ctsu_sensor.tx.none"/>
+      <property id="module.driver.ctsu_sensor.ctsussdiv" value="1"/>
+      <property id="module.driver.ctsu_sensor.ctsusnum" value="3"/>
+      <property id="module.driver.ctsu_sensor.ctsuicog" value="1"/>
+      <property id="module.driver.ctsu_sensor.ctsusdpa" value="5"/>
+      <property id="module.driver.ctsu_sensor.ctsuricoa" value="95"/>
+      <property id="module.driver.ctsu_sensor.ctsuso" value="409"/>
+      <property id="module.driver.ctsu_sensor.sep1" value="module.driver.ctsu_sensor.sep1.none"/>
+      <property id="module.driver.ctsu_sensor.threshold" value="2452"/>
+      <property id="module.driver.ctsu_sensor.hysteresis" value="122"/>
+      <property id="module.driver.ctsu_sensor.dtouch" value="3"/>
+      <property id="module.driver.ctsu_sensor.drelease" value="3"/>
+      <property id="module.driver.ctsu_sensor.sep2" value="module.driver.ctsu_sensor.sep2.none"/>
+      <property id="module.driver.ctsu_sensor.drift" value="1000"/>
+      <property id="module.driver.ctsu_sensor.dr_accel" value="0"/>
+      <property id="module.driver.ctsu_sensor.dr_decel" value="0"/>
+      <property id="module.driver.ctsu_sensor.sep3" value="module.driver.ctsu_sensor.sep3.none"/>
+      <property id="module.driver.ctsu_sensor.offset_interval" value="1000"/>
+      <property id="module.driver.ctsu_sensor.offset_thresh" value="100"/>
+    </module>
+    
+
+    <context id="_context.57394500">
+        <stack module="module.driver.ctsu_sensor_on_ctsu.8039641348823">
+            <stack module="module.driver.ctsu_on_ctsu.1212779911011" requires="module.driver.ctsu_sensor.requires.ctsu"/>
+        </stack>
+    </context>
+    
+    <module id="module.driver.touch_on_touch.1069485716332">
+      <property id="module.driver.touch.name" value="g_touch0_on_g_ctsu"/>
+      <property id="module.driver.touch.p_binary_result" value="g_touch0_on_g_ctsu_binary"/>
+      <property id="module.driver.touch.drift_hold_limit" value="0"/>
+      <property id="module.driver.touch.on_limit" value="65535"/>
+      <property id="module.driver.touch.max_touched_sensors" value="1"/>
+      <property id="module.driver.touch.p_callback" value="NULL"/>
+    </module>
+    <context id="_context.46582912">
+        <stack module="module.driver.touch_on_touch.1069485716332">
+            <stack module="module.driver.ctsu_on_ctsu.1212779911011" requires="module.driver.touch.requires.ctsu"/>
+        </stack>
+    </context>
+    
+    <module id="module.framework.sf_touch_button_v2.8719029109697">
+      <property id="module.framework.sf_touch_button.name" value="Button_RX00_on_g_touch0_on_g_ctsu"/>
+      <property id="module.framework.sf_touch_button.press_enable" value="module.framework.sf_touch_button.press_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.release_enable" value="module.framework.sf_touch_button.release_enable.enabled"/>
+      <property id="module.framework.sf_touch_button.debounce" value="1"/>
+      <property id="module.framework.sf_touch_button.p_callback" value="touch_button_common_callback"/>
+    </module>
+    <context id="_context.93913230">
+      <stack module="module.framework.sf_touch_button_v2.8719029109697">
+        <stack module="module.driver.touch_on_touch.1069485716332" requires="module.framework.sf_touch_button.requires.touch">
+          <stack module="module.driver.ctsu_on_ctsu.1212779911011" requires="module.driver.touch.requires.ctsu"/>
+        </stack>
+        <stack module="module.driver.ctsu_sensor_on_ctsu.8039641348823" requires="module.framework.sf_touch_button.requires.ctsu_sensor">
+          <stack module="module.driver.ctsu_on_ctsu.1212779911011" requires="module.driver.ctsu_sensor.requires.ctsu"/>
+        </stack>
+      </stack>
+    </context>
+        
+                </synergyModuleConfiguration>
+            </synergyConfiguration>
+            

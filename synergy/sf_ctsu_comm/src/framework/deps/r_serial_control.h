@@ -50,11 +50,11 @@ typedef struct MYDATA                   //CG create a data structure
     uint64_t sumSquared;
     uint32_t variance_nw;              //Average squared and variance without water
     uint32_t stdev_nw;
-    uint32_t average2_nw;
-    uint32_t variance_w;               //Average squared and variance with water
-    uint32_t stdev_w;
-    uint32_t average2_w;
-    uint32_t variance;                  //Average squared and variance during operation
+    uint64_t average2_nw;
+    uint64_t variance_w;               //Average squared and variance with water
+    uint64_t stdev_w;
+    uint64_t average2_w;
+    uint64_t variance;                  //Average squared and variance during operation
     uint32_t stdev;
     uint32_t average2;
     uint16_t value[MYDATA_SIZE];

@@ -3568,7 +3568,6 @@ static BOOL IsRightChecksum(com_data_rd_t *pcmd)
 static uint8_t GetSensorValue(uint8_t code, uint16_t channel, uint16_t *pval)
 {
     uint8_t result;
-    static uint16_t aux = 0;
 
     switch (code)
     {
@@ -3580,7 +3579,7 @@ static uint8_t GetSensorValue(uint8_t code, uint16_t channel, uint16_t *pval)
                 mydata.sum -= mydata.aux;
                 mydata.sum += *pval;
                 mydata.sumSquared = (uint64_t)mydata.sum * (uint64_t)mydata.sum;
-                mydata.sumOfSquares = mydata.sumOfSquares - (mydata.aux * mydata.aux) + ((*pval) * (*pval));
+                mydata.sumOfSquares = mydata.sumOfSquares - (((uint64_t)mydata.aux * (uint64_t)mydata.aux) + ((uint64_t)(*pval) * (uint64_t)(*pval)));
                 mydata.value[mydata.head++] = *pval;        //Load data in a circular buffer
                 if (mydata.head == MYDATA_SIZE)
                 {

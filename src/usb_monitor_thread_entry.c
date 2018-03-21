@@ -296,7 +296,7 @@ void fsm_collect_nwnh_samples(void)
     {
         mydata.average2_nw = mydata.sum/MYDATA_SIZE;                    //square the average to use variance instead of standard deviation
         //mydata.average2_nw = mydata.average2_nw * mydata.average2_nw;
-        mydata.variance_nw = (mydata.sumOfSquares - (mydata.sumSquared/MYDATA_SIZE))/(MYDATA_SIZE - 1);
+        mydata.variance_nw = (uint32_t)(mydata.sumOfSquares - (mydata.sumSquared/MYDATA_SIZE))/(MYDATA_SIZE - 1);
         mydata.stdev_nw = (uint32_t)sqrt(mydata.variance_nw);
         if (mydata.average2_nw > MIN_AVERAGE_NW)                        //If larger than minimum (to prevent short circuited sensor)
         {
@@ -342,8 +342,8 @@ void fsm_collect_wnh_samples(void)
         {
             mydata.average2_w = mydata.sum/MYDATA_SIZE;                    //square the average to use variance instead of standard deviation
             //mydata.average2_w = mydata.average2_w * mydata.average2_w;
-            mydata.variance_w = (mydata.sumOfSquares - (mydata.sumSquared/MYDATA_SIZE))/(MYDATA_SIZE - 1);
-            mydata.stdev_w = (uint32_t)sqrt(mydata.variance_w);
+            mydata.variance_w = ((uint32_t)mydata.sumOfSquares - (mydata.sumSquared/MYDATA_SIZE))/(MYDATA_SIZE - 1);
+            mydata.stdev_w = (uint32_t)sqrt((double)mydata.variance_w);
             if ((mydata.average2_nw + (NOISE_SAFETY_MARGIN_TO_CLOSE * mydata.stdev_nw)) < mydata.average2_w)
             {
                 timer = 0;
@@ -382,7 +382,7 @@ void calculateAverageVariance (void)
     mydata.average2 = mydata.sum/MYDATA_SIZE;                    //square the average to use variance instead of standard deviation
     //mydata.average2 = mydata.average2 * mydata.average2;
     mydata.variance = (mydata.sumOfSquares - (mydata.sumSquared/MYDATA_SIZE))/(MYDATA_SIZE - 1);
-    mydata.stdev = (uint32_t)sqrt(mydata.variance);
+    mydata.stdev = (uint32_t)sqrt((double)mydata.variance);
 }
 
 
@@ -395,6 +395,7 @@ void fsm_faucet_closed(void)
         calculateAverageVariance();
         if (mydata.average2 > (mydata.average2_nw + (NOISE_SAFETY_MARGIN_TO_OPEN * mydata.stdev_nw)))
         {
+#if (HAND_DETECTION_TIME > 0u)
             if (timer < HAND_DETECTION_TIME)
             {
                 timer++;
@@ -402,6 +403,7 @@ void fsm_faucet_closed(void)
 
             }
             else
+#endif
             {
                 timer = 0;
                 rawFsm = FAUCET_OPENING;                         //Put the FSM in normal operation
@@ -437,25 +439,11 @@ void fsm_faucet_opening (void)
 
 void fsm_faucet_closing (void)
 {
-    static uint16_t timer = SOLENOID_CLOSING_TIME;
-
     calculateAverageVariance();
     if (mydata.average2 < (mydata.average2_nw + ((NOISE_SAFETY_MARGIN_TO_OPEN - 3) * mydata.stdev_nw)))
     {
         rawFsm = FAUCET_CLOSED;                         //Put the FSM in normal operation
     }
-//    if (timer)
-//    {
-//        timer--;
-//        //Here insert function to open solenoid
-//
-//    }
-//    else
-//    {
-//        timer = SOLENOID_CLOSING_TIME;
-//        rawFsm = FAUCET_CLOSED;                         //Put the FSM in normal operation
-//        //mydata.f_buffer_loaded = false;
-//    }
 }
 
 void fsm_faucet_opened (void)

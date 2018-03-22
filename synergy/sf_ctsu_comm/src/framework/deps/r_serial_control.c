@@ -42,6 +42,7 @@
 
 #include "../../../../r_ctsu_v2/src/driver/r_ctsu/r_ctsu_private.h"
 #include "../../../../r_touch_v2/src/driver/r_touch/r_touch_private.h"
+#include "../../../../../src/utility.h"
 
 #if (2 == BSP_CFG_ASSERT)
 /** @note Use assertion on the Renesas Virtual Console.
@@ -61,6 +62,10 @@
 #endif
 #include "common_data.h"
 #include "r_serial_control.h"
+
+#ifdef FAUCET_EXAMPLE_CODE
+MYDATA mydata;
+#endif
 
 #define __R_SERIAL_COMMAND_C__
 
@@ -3573,6 +3578,7 @@ static uint8_t GetSensorValue(uint8_t code, uint16_t channel, uint16_t *pval)
     {
         case 0x00:    // SC
             result = GetMeasureSensorCounter(channel, pval);
+#ifdef FAUCET_EXAMPLE_CODE
             if (channel == 0)
             {
                 mydata.aux = mydata.value[mydata.head];     //Load the current value of the sample
@@ -3586,8 +3592,8 @@ static uint8_t GetSensorValue(uint8_t code, uint16_t channel, uint16_t *pval)
                     mydata.head = 0;
                     mydata.f_buffer_loaded = true;
                 }
-
             }
+#endif
             break;
         case 0x01:    // RV
             result = GetMeasureReferenceValue(channel, pval);

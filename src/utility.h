@@ -15,6 +15,8 @@
 
 int Blink_Red_Led;       /* auto tune failure indication */
 
+#define FAUCET_EXAMPLE_CODE
+
 
 
 #endif //] _UTILITY_H__

@@ -62,6 +62,7 @@ synergy/sf_ctsu_comm/src/framework/deps/r_serial_control.o: \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_ctsu_comm\inc\framework\api/sf_ctsu_comm_api.h \
  ../synergy/sf_ctsu_comm/src/framework/deps/../../../../r_ctsu_v2/src/driver/r_ctsu/r_ctsu_private.h \
  ../synergy/sf_ctsu_comm/src/framework/deps/../../../../r_touch_v2/src/driver/r_touch/r_touch_private.h \
+ c:\projects\ae_cap1_s3a7_st_mini_app_usb_monitor\src\utility.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\src\synergy_gen/common_data.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\r_ctsu_v2\inc\driver\instances/r_ctsu.h \
  c:\projects\ae_cap1_s3a7_st_mini_app_usb_monitor\synergy\r_ctsu_v2\src\driver\r_ctsu\hw\r_ctsu_sfr_access_synergy.h \
@@ -221,6 +222,8 @@ C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_ctsu_comm\inc\framew
 ../synergy/sf_ctsu_comm/src/framework/deps/../../../../r_ctsu_v2/src/driver/r_ctsu/r_ctsu_private.h:
 
 ../synergy/sf_ctsu_comm/src/framework/deps/../../../../r_touch_v2/src/driver/r_touch/r_touch_private.h:
+
+c:\projects\ae_cap1_s3a7_st_mini_app_usb_monitor\src\utility.h:
 
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\src\synergy_gen/common_data.h:
 

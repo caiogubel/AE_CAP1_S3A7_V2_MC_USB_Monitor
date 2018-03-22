@@ -24,6 +24,7 @@ static ULONG events_got1 = 0;  /* Events retrieved */
 static touch_button_callback_arg_t button_callback_args; /* button callback saved */
 static void Handle_Button_Events (void);    /* handle button events */
 
+
 /* handle button events */
 static void Handle_Button_Events (void)
 {
@@ -32,12 +33,14 @@ static void Handle_Button_Events (void)
           case TOUCH_BUTTON_EVENT_REQUEST_DELAY:
               tx_thread_sleep(1);
               break;
+#ifndef  FAUCET_EXAMPLE_CODE
           case TOUCH_BUTTON_EVENT_PRESSED:
-              //g_ioport.p_api->pinWrite(IOPORT_PORT_09_PIN_00, IOPORT_LEVEL_HIGH);   /* red LED1 */
+              g_ioport.p_api->pinWrite(IOPORT_PORT_09_PIN_00, IOPORT_LEVEL_HIGH);   /* red LED1 */
                break;
           case TOUCH_BUTTON_EVENT_RELEASED:
-              //g_ioport.p_api->pinWrite(IOPORT_PORT_09_PIN_00, IOPORT_LEVEL_LOW);   /* red LED1 */
+              g_ioport.p_api->pinWrite(IOPORT_PORT_09_PIN_00, IOPORT_LEVEL_LOW);   /* red LED1 */
               break;
+#endif
           default:
               break;
       }

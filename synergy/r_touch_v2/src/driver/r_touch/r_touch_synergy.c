@@ -1184,39 +1184,42 @@ static void sensor_optimize_sensitivity(void * p_arg)
 #if (TOUCH_CFG_PARAM_CHECKING_ENABLE==true)
         if(CTSU_SUCCESS!=ctsu_err)
 		{
-			return (touch_err_t)ctsu_err;
+			//CG - Eliminate warning created by "return" --> return (touch_err_t)ctsu_err;
 		}
-#endif
-        ctsuso = arg_ext.value & 0x3FF;
-
-        if(avg_sen_cnt_pri > avg_ref_cnt_pri)
-        {
-            ctsuso = (uint16_t)(ctsuso + ((ctsuso < 0x3FE) ? 1:0));
-        }
-        else if(avg_sen_cnt_pri < avg_ref_cnt_pri)
-        {
-            ctsuso = (uint16_t)(ctsuso - ((ctsuso > 1U) ? 1:0));
-        }
         else
-        {
-            /* GSCE CODAN Error: Do Nothing. */
-        }
-
-        avg_sen_cnt_pri = sen_cnt_pri;
-        avg_ref_cnt_pri = ref_cnt_pri;
-
-        arg_ext.value &= (uint16_t)~0x3FFU;
-        arg_ext.value |= ctsuso;
-
-        arg.cmd = CTSU_CMD_SET_CTSUSO0;
-        ctsu_err = p_optimize_args->p_ctsu->p_api->control(p_optimize_args->p_ctsu->p_ctrl, &arg);
-#if (TOUCH_CFG_PARAM_CHECKING_ENABLE==true)
-        if(CTSU_SUCCESS!=ctsu_err)
-		{
-			return (touch_err_t)ctsu_err;
-		}
 #endif
-        count = 0;
+        {
+            ctsuso = arg_ext.value & 0x3FF;
+
+            if(avg_sen_cnt_pri > avg_ref_cnt_pri)
+            {
+                ctsuso = (uint16_t)(ctsuso + ((ctsuso < 0x3FE) ? 1:0));
+            }
+            else if(avg_sen_cnt_pri < avg_ref_cnt_pri)
+            {
+                ctsuso = (uint16_t)(ctsuso - ((ctsuso > 1U) ? 1:0));
+            }
+            else
+            {
+                /* GSCE CODAN Error: Do Nothing. */
+            }
+
+            avg_sen_cnt_pri = sen_cnt_pri;
+            avg_ref_cnt_pri = ref_cnt_pri;
+
+            arg_ext.value &= (uint16_t)~0x3FFU;
+            arg_ext.value |= ctsuso;
+
+            arg.cmd = CTSU_CMD_SET_CTSUSO0;
+            ctsu_err = p_optimize_args->p_ctsu->p_api->control(p_optimize_args->p_ctsu->p_ctrl, &arg);
+#if (TOUCH_CFG_PARAM_CHECKING_ENABLE==true)
+            if(CTSU_SUCCESS!=ctsu_err)
+            {
+                return;     //CG Modified to prevent Warning by return with parameter --> return (touch_err_t)ctsu_err;
+            }
+#endif
+            count = 0;
+        }
     }
 
     /* Save all parameters that can change in this block */
@@ -1226,7 +1229,6 @@ static void sensor_optimize_sensitivity(void * p_arg)
 
     (void)ctsu_err; //Gets rid of compiler warning.
 
-    return;
 }
 /***********************************************************************************************************************
 End of function sensor_optimize_sensitivity

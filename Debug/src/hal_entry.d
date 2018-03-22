@@ -93,7 +93,8 @@ src/hal_entry.o: ../src/hal_entry.c \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\driver\api/r_elc_api.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_el_ux_dcd_fs_cfg.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_el_ux_cfg.h \
- C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\framework\el/ux_device_class_cdc_acm.h
+ C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\framework\el/ux_device_class_cdc_acm.h \
+ ../src/utility.h
 
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\src\synergy_gen/hal_data.h:
 
@@ -284,3 +285,5 @@ C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/s
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_el_ux_cfg.h:
 
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\framework\el/ux_device_class_cdc_acm.h:
+
+../src/utility.h:

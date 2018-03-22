@@ -780,6 +780,56 @@ extern ctsu_instance_t const g_ctsu0;
 #error "Check TS for CTSU_SENSOR_3_TS_TX"
 #endif
 #endif
+#define CTSU_SENSOR_0_TS_RX     (0)
+#define CTSU_SENSOR_0_TS_TX     (19)
+#define g_ctsu0_INDEX_0     (0)
+#define CTSU_SENSOR_0_FREQ      (SYNERGY_NOT_DEFINED)
+
+#define CTSU_SENSOR_0_CTSUSSDIV (0)
+#define CTSU_SENSOR_0_CTSUSO    (380)
+#define CTSU_SENSOR_0_CTSUSNUM  (7)
+#define CTSU_SENSOR_0_CTSURICOA (0x3F)
+#define CTSU_SENSOR_0_CTSUSDPA  (2)
+#define CTSU_SENSOR_0_CTSUICOG  (1)
+
+#define CTSU_SENSOR_0_CTSUSST   (CTSU_SENSOR_0_CTSUSSDIV << 8)
+#define CTSU_SENSOR_0_CTSUSO0   ((CTSU_SENSOR_0_CTSUSNUM << 10)|CTSU_SENSOR_0_CTSUSO)
+#define CTSU_SENSOR_0_CTSUSO1   ((CTSU_SENSOR_0_CTSUICOG << 13)|(CTSU_SENSOR_0_CTSUSDPA << 8) |CTSU_SENSOR_0_CTSURICOA)
+
+#define CTSU_SENSOR_0_THRESHOLD     (3283)
+#define CTSU_SENSOR_0_HYSTERESIS    (164)
+#define CTSU_SENSOR_0_DELAY_2_T     (3)
+#define CTSU_SENSOR_0_DELAY_2_R     (3)
+
+#define CTSU_SENSOR_0_DRIFT_RATE    (1000)
+#define CTSU_SENSOR_0_RATE_PLUS     (0) /* (SYNERGY_NOT_DEFINED) */
+#define CTSU_SENSOR_0_RATE_MINUS    (0) /* (SYNERGY_NOT_DEFINED) */
+
+#define CTSU_SENSOR_0_ADJ_INTERVAL  (1000)
+#define CTSU_SENSOR_0_ADJ_THRESHOLD (100)
+
+#define CTSU_SENSOR_0_CTSU_SFRS       {CTSU_SENSOR_0_CTSUSST, CTSU_SENSOR_0_CTSUSO0, CTSU_SENSOR_0_CTSUSO1}
+#define g_ctsu0_INDEX_0_CTSU_SFRS    CTSU_SENSOR_0_CTSU_SFRS
+#define CTSU_SENSOR_0_TOUCH_PARAMS    {CTSU_SENSOR_0_THRESHOLD,CTSU_SENSOR_0_HYSTERESIS,CTSU_SENSOR_0_DELAY_2_T,CTSU_SENSOR_0_DELAY_2_R,CTSU_SENSOR_0_DRIFT_RATE,CTSU_SENSOR_0_RATE_PLUS,CTSU_SENSOR_0_RATE_MINUS,CTSU_SENSOR_0_ADJ_INTERVAL,CTSU_SENSOR_0_ADJ_THRESHOLD,}
+#define g_ctsu0_INDEX_0_TOUCH_PARAMS    CTSU_SENSOR_0_TOUCH_PARAMS
+
+#if !defined(g_ctsu0_RX_0_TX_19)
+#define g_ctsu0_RX_0_TX_19   (1)
+#else
+#error "Combination with TS0 as receive and TS19 as transmit is already in use with a Capacitive Touch Sensor on r_ctsu_v2 which uses g_ctsu0"
+#endif
+
+#if (CTSU_SENSOR_0_TS_RX > 35)
+#error "Check TS for CTSU_SENSOR_0_TS_RX"
+#elif (MUTUAL0_TS0!=1)
+#error "Check TS for CTSU_SENSOR_0_TS_RX"
+#endif
+
+#if (CTSU_SENSOR_0_TS_TX < 36)
+#if (MUTUAL0_TS19!=2)
+#error "Check TS for CTSU_SENSOR_0_TS_TX"
+#endif
+#endif
 #define CTSU_SENSOR_1_TS_RX     (1)
 #define CTSU_SENSOR_1_TS_TX     (19)
 #define g_ctsu0_INDEX_1     (1)
@@ -880,56 +930,6 @@ extern ctsu_instance_t const g_ctsu0;
 #error "Check TS for CTSU_SENSOR_2_TS_TX"
 #endif
 #endif
-#define CTSU_SENSOR_0_TS_RX     (0)
-#define CTSU_SENSOR_0_TS_TX     (19)
-#define g_ctsu0_INDEX_0     (0)
-#define CTSU_SENSOR_0_FREQ      (SYNERGY_NOT_DEFINED)
-
-#define CTSU_SENSOR_0_CTSUSSDIV (0)
-#define CTSU_SENSOR_0_CTSUSO    (380)
-#define CTSU_SENSOR_0_CTSUSNUM  (7)
-#define CTSU_SENSOR_0_CTSURICOA (0x3F)
-#define CTSU_SENSOR_0_CTSUSDPA  (2)
-#define CTSU_SENSOR_0_CTSUICOG  (1)
-
-#define CTSU_SENSOR_0_CTSUSST   (CTSU_SENSOR_0_CTSUSSDIV << 8)
-#define CTSU_SENSOR_0_CTSUSO0   ((CTSU_SENSOR_0_CTSUSNUM << 10)|CTSU_SENSOR_0_CTSUSO)
-#define CTSU_SENSOR_0_CTSUSO1   ((CTSU_SENSOR_0_CTSUICOG << 13)|(CTSU_SENSOR_0_CTSUSDPA << 8) |CTSU_SENSOR_0_CTSURICOA)
-
-#define CTSU_SENSOR_0_THRESHOLD     (3283)
-#define CTSU_SENSOR_0_HYSTERESIS    (164)
-#define CTSU_SENSOR_0_DELAY_2_T     (3)
-#define CTSU_SENSOR_0_DELAY_2_R     (3)
-
-#define CTSU_SENSOR_0_DRIFT_RATE    (1000)
-#define CTSU_SENSOR_0_RATE_PLUS     (0) /* (SYNERGY_NOT_DEFINED) */
-#define CTSU_SENSOR_0_RATE_MINUS    (0) /* (SYNERGY_NOT_DEFINED) */
-
-#define CTSU_SENSOR_0_ADJ_INTERVAL  (1000)
-#define CTSU_SENSOR_0_ADJ_THRESHOLD (100)
-
-#define CTSU_SENSOR_0_CTSU_SFRS       {CTSU_SENSOR_0_CTSUSST, CTSU_SENSOR_0_CTSUSO0, CTSU_SENSOR_0_CTSUSO1}
-#define g_ctsu0_INDEX_0_CTSU_SFRS    CTSU_SENSOR_0_CTSU_SFRS
-#define CTSU_SENSOR_0_TOUCH_PARAMS    {CTSU_SENSOR_0_THRESHOLD,CTSU_SENSOR_0_HYSTERESIS,CTSU_SENSOR_0_DELAY_2_T,CTSU_SENSOR_0_DELAY_2_R,CTSU_SENSOR_0_DRIFT_RATE,CTSU_SENSOR_0_RATE_PLUS,CTSU_SENSOR_0_RATE_MINUS,CTSU_SENSOR_0_ADJ_INTERVAL,CTSU_SENSOR_0_ADJ_THRESHOLD,}
-#define g_ctsu0_INDEX_0_TOUCH_PARAMS    CTSU_SENSOR_0_TOUCH_PARAMS
-
-#if !defined(g_ctsu0_RX_0_TX_19)
-#define g_ctsu0_RX_0_TX_19   (1)
-#else
-#error "Combination with TS0 as receive and TS19 as transmit is already in use with a Capacitive Touch Sensor on r_ctsu_v2 which uses g_ctsu0"
-#endif
-
-#if (CTSU_SENSOR_0_TS_RX > 35)
-#error "Check TS for CTSU_SENSOR_0_TS_RX"
-#elif (MUTUAL0_TS0!=1)
-#error "Check TS for CTSU_SENSOR_0_TS_RX"
-#endif
-
-#if (CTSU_SENSOR_0_TS_TX < 36)
-#if (MUTUAL0_TS19!=2)
-#error "Check TS for CTSU_SENSOR_0_TS_TX"
-#endif
-#endif
 #if (DATA_SOURCE == DATA_SOURCE_SSPCONFIG)
 /** CTSU SFRs common to all sensors (in a configuration) */
 extern uint64_t g_touch0_on_g_ctsu_binary;
@@ -947,16 +947,16 @@ extern touch_button_instance_t Button_RX03_on_g_touch0_on_g_ctsu;
 /** Declaration of user callback function. This function MUST be defined in the user application.*/
 void touch_button_common_callback(touch_button_callback_arg_t * p_args);
 #endif
-extern sf_ctsu_comm_instance_t const g_sf_ctsu_comm0;
 /** SF Touch Button instance */
-extern touch_button_instance_t Button_RX02_on_g_touch0_on_g_ctsu;
+extern touch_button_instance_t Button_RX01_on_g_touch0_on_g_ctsu;
 #ifndef touch_button_common_callback_defined
 #define touch_button_common_callback_defined
 /** Declaration of user callback function. This function MUST be defined in the user application.*/
 void touch_button_common_callback(touch_button_callback_arg_t * p_args);
 #endif
+extern sf_ctsu_comm_instance_t const g_sf_ctsu_comm0;
 /** SF Touch Button instance */
-extern touch_button_instance_t Button_RX01_on_g_touch0_on_g_ctsu;
+extern touch_button_instance_t Button_RX02_on_g_touch0_on_g_ctsu;
 #ifndef touch_button_common_callback_defined
 #define touch_button_common_callback_defined
 /** Declaration of user callback function. This function MUST be defined in the user application.*/

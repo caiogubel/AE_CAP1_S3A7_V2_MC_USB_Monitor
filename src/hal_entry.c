@@ -1,6 +1,7 @@
 /* HAL-only entry function */
 #include <stdio.h>
 #include "hal_data.h"
+#include "utility.h"
 
 #define SHOW_SENSOR_INFORMATION
 

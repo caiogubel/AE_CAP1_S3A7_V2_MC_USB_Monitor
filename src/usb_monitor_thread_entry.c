@@ -288,7 +288,7 @@ void turn_off_solenoid (void)
 
              }
              else
- #endif
+ #endif     //#if (HAND_DETECTION_TIME > 0u)
              {
                  timer = 0;
                  rawFsm = FAUCET_OPENING;                         //Put the FSM in normal operation
@@ -446,7 +446,7 @@ void turn_off_solenoid (void)
      }
  }
 
-#endif
+#endif      //#ifdef  FAUCET_EXAMPLE_CODE
 
  /* turn on red led */
   static void turn_on_red_led(void)

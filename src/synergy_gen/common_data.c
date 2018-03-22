@@ -1453,28 +1453,6 @@ touch_instance_t const g_touch0_on_g_ctsu =
 { .p_ctrl = &g_touch0_on_g_ctsu_ctrl, .p_cfg = &g_touch0_on_g_ctsu_cfg, .p_api = &g_touch_on_touch, };
 
 #endif /* (DATA_SOURCE == DATA_SOURCE_SSPCONFIG) */
-#if (DATA_SOURCE == DATA_SOURCE_SSPCONFIG)
-touch_button_instance_ctrl_t Button_RX03_on_g_touch0_on_g_ctsu_ctrl;
-touch_button_cfg_t Button_RX03_on_g_touch0_on_g_ctsu_cfg =
-{ .button.tx = CTSU_SENSOR_3_TS_TX, .button.rx = CTSU_SENSOR_3_TS_RX, .p_touch = &g_touch0_on_g_ctsu,
-  .enable.bit.reserved = 0, .enable.bit.hold = false, .enable.bit.press = true, .enable.bit.release = true, .debounce =
-          1, //SYNERGY_NOT_DEFINED,
-  .hold_max = 65535, .p_callback = touch_button_common_callback, };
-touch_button_instance_t Button_RX03_on_g_touch0_on_g_ctsu =
-{ .p_ctrl = &Button_RX03_on_g_touch0_on_g_ctsu_ctrl, .p_cfg = &Button_RX03_on_g_touch0_on_g_ctsu_cfg, .p_api =
-          &g_touch_button_on_touch_button, };
-#endif /* (DATA_SOURCE == DATA_SOURCE_SSPCONFIG) */
-#if (DATA_SOURCE == DATA_SOURCE_SSPCONFIG)
-touch_button_instance_ctrl_t Button_RX01_on_g_touch0_on_g_ctsu_ctrl;
-touch_button_cfg_t Button_RX01_on_g_touch0_on_g_ctsu_cfg =
-{ .button.tx = CTSU_SENSOR_1_TS_TX, .button.rx = CTSU_SENSOR_1_TS_RX, .p_touch = &g_touch0_on_g_ctsu,
-  .enable.bit.reserved = 0, .enable.bit.hold = false, .enable.bit.press = true, .enable.bit.release = true, .debounce =
-          1, //SYNERGY_NOT_DEFINED,
-  .hold_max = 65535, .p_callback = touch_button_common_callback, };
-touch_button_instance_t Button_RX01_on_g_touch0_on_g_ctsu =
-{ .p_ctrl = &Button_RX01_on_g_touch0_on_g_ctsu_ctrl, .p_cfg = &Button_RX01_on_g_touch0_on_g_ctsu_cfg, .p_api =
-          &g_touch_button_on_touch_button, };
-#endif /* (DATA_SOURCE == DATA_SOURCE_SSPCONFIG) */
 #if (SF_CTSU_COMM_CFG_CONNECTION==2)
 extern uart_instance_t const g_sf_comms0;
 #else
@@ -1509,6 +1487,28 @@ touch_button_cfg_t Button_RX02_on_g_touch0_on_g_ctsu_cfg =
   .hold_max = 65535, .p_callback = touch_button_common_callback, };
 touch_button_instance_t Button_RX02_on_g_touch0_on_g_ctsu =
 { .p_ctrl = &Button_RX02_on_g_touch0_on_g_ctsu_ctrl, .p_cfg = &Button_RX02_on_g_touch0_on_g_ctsu_cfg, .p_api =
+          &g_touch_button_on_touch_button, };
+#endif /* (DATA_SOURCE == DATA_SOURCE_SSPCONFIG) */
+#if (DATA_SOURCE == DATA_SOURCE_SSPCONFIG)
+touch_button_instance_ctrl_t Button_RX01_on_g_touch0_on_g_ctsu_ctrl;
+touch_button_cfg_t Button_RX01_on_g_touch0_on_g_ctsu_cfg =
+{ .button.tx = CTSU_SENSOR_1_TS_TX, .button.rx = CTSU_SENSOR_1_TS_RX, .p_touch = &g_touch0_on_g_ctsu,
+  .enable.bit.reserved = 0, .enable.bit.hold = false, .enable.bit.press = true, .enable.bit.release = true, .debounce =
+          1, //SYNERGY_NOT_DEFINED,
+  .hold_max = 65535, .p_callback = touch_button_common_callback, };
+touch_button_instance_t Button_RX01_on_g_touch0_on_g_ctsu =
+{ .p_ctrl = &Button_RX01_on_g_touch0_on_g_ctsu_ctrl, .p_cfg = &Button_RX01_on_g_touch0_on_g_ctsu_cfg, .p_api =
+          &g_touch_button_on_touch_button, };
+#endif /* (DATA_SOURCE == DATA_SOURCE_SSPCONFIG) */
+#if (DATA_SOURCE == DATA_SOURCE_SSPCONFIG)
+touch_button_instance_ctrl_t Button_RX03_on_g_touch0_on_g_ctsu_ctrl;
+touch_button_cfg_t Button_RX03_on_g_touch0_on_g_ctsu_cfg =
+{ .button.tx = CTSU_SENSOR_3_TS_TX, .button.rx = CTSU_SENSOR_3_TS_RX, .p_touch = &g_touch0_on_g_ctsu,
+  .enable.bit.reserved = 0, .enable.bit.hold = false, .enable.bit.press = true, .enable.bit.release = true, .debounce =
+          1, //SYNERGY_NOT_DEFINED,
+  .hold_max = 65535, .p_callback = touch_button_common_callback, };
+touch_button_instance_t Button_RX03_on_g_touch0_on_g_ctsu =
+{ .p_ctrl = &Button_RX03_on_g_touch0_on_g_ctsu_ctrl, .p_cfg = &Button_RX03_on_g_touch0_on_g_ctsu_cfg, .p_api =
           &g_touch_button_on_touch_button, };
 #endif /* (DATA_SOURCE == DATA_SOURCE_SSPCONFIG) */
 #if (DATA_SOURCE == DATA_SOURCE_SSPCONFIG)
@@ -1550,8 +1550,8 @@ void g_common_init(void)
 
 #if (BUTTON_CFG_OPEN_ON_INIT==1)
     {
-        /* Open the Button_RX03_on_g_touch0_on_g_ctsu button Instance */
-        touch_button_err_t err = Button_RX03_on_g_touch0_on_g_ctsu.p_api->open(Button_RX03_on_g_touch0_on_g_ctsu.p_ctrl, Button_RX03_on_g_touch0_on_g_ctsu.p_cfg);
+        /* Open the Button_RX02_on_g_touch0_on_g_ctsu button Instance */
+        touch_button_err_t err = Button_RX02_on_g_touch0_on_g_ctsu.p_api->open(Button_RX02_on_g_touch0_on_g_ctsu.p_ctrl, Button_RX02_on_g_touch0_on_g_ctsu.p_cfg);
 
         /* Wait here if open fails */
         while(TOUCH_BUTTON_SUCCESS!=err);
@@ -1566,11 +1566,10 @@ void g_common_init(void)
         while(TOUCH_BUTTON_SUCCESS!=err);
     }
 #endif /* (BUTTON_CFG_OPEN_ON_INIT==1) */
-
 #if (BUTTON_CFG_OPEN_ON_INIT==1)
     {
-        /* Open the Button_RX02_on_g_touch0_on_g_ctsu button Instance */
-        touch_button_err_t err = Button_RX02_on_g_touch0_on_g_ctsu.p_api->open(Button_RX02_on_g_touch0_on_g_ctsu.p_ctrl, Button_RX02_on_g_touch0_on_g_ctsu.p_cfg);
+        /* Open the Button_RX03_on_g_touch0_on_g_ctsu button Instance */
+        touch_button_err_t err = Button_RX03_on_g_touch0_on_g_ctsu.p_api->open(Button_RX03_on_g_touch0_on_g_ctsu.p_ctrl, Button_RX03_on_g_touch0_on_g_ctsu.p_cfg);
 
         /* Wait here if open fails */
         while(TOUCH_BUTTON_SUCCESS!=err);

@@ -16339,8 +16339,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x46 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/common_data.o
- .debug_macro   0x00000000       0x1c ./src/synergy_gen/common_data.o
- .debug_macro   0x00000000       0x16 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x46 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x1c ./src/synergy_gen/common_data.o
@@ -16348,6 +16346,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x167 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000      0x7eb ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/common_data.o
+ .debug_macro   0x00000000       0x1c ./src/synergy_gen/common_data.o
+ .debug_macro   0x00000000       0x16 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x2e ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/common_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/common_data.o
@@ -16511,9 +16511,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x46 ./src/synergy_gen/ctsu_thread.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/ctsu_thread.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/ctsu_thread.o
+ .debug_macro   0x00000000       0x46 ./src/synergy_gen/ctsu_thread.o
  .debug_macro   0x00000000       0x1c ./src/synergy_gen/ctsu_thread.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/ctsu_thread.o
- .debug_macro   0x00000000       0x46 ./src/synergy_gen/ctsu_thread.o
  .debug_macro   0x00000000       0x2e ./src/synergy_gen/ctsu_thread.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/ctsu_thread.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/ctsu_thread.o
@@ -16672,8 +16672,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x46 ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/hal_data.o
- .debug_macro   0x00000000       0x1c ./src/synergy_gen/hal_data.o
- .debug_macro   0x00000000       0x16 ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x46 ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x1c ./src/synergy_gen/hal_data.o
@@ -16681,6 +16679,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x167 ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000      0x7eb ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/hal_data.o
+ .debug_macro   0x00000000       0x1c ./src/synergy_gen/hal_data.o
+ .debug_macro   0x00000000       0x16 ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x2e ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/hal_data.o
  .debug_macro   0x00000000       0x10 ./src/synergy_gen/hal_data.o
@@ -17021,9 +17021,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x46 ./src/synergy_gen/usb_monitor_thread.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/usb_monitor_thread.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/usb_monitor_thread.o
- .debug_macro   0x00000000       0x1c ./src/synergy_gen/usb_monitor_thread.o
- .debug_macro   0x00000000       0x16 ./src/synergy_gen/usb_monitor_thread.o
  .debug_macro   0x00000000       0x46 ./src/synergy_gen/usb_monitor_thread.o
+ .debug_macro   0x00000000       0x16 ./src/synergy_gen/usb_monitor_thread.o
+ .debug_macro   0x00000000       0x1c ./src/synergy_gen/usb_monitor_thread.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/usb_monitor_thread.o
  .debug_macro   0x00000000       0x2e ./src/synergy_gen/usb_monitor_thread.o
  .debug_macro   0x00000000       0x16 ./src/synergy_gen/usb_monitor_thread.o
@@ -17194,9 +17194,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x46 ./src/ctsu_thread_entry.o
  .debug_macro   0x00000000       0x16 ./src/ctsu_thread_entry.o
  .debug_macro   0x00000000       0x16 ./src/ctsu_thread_entry.o
- .debug_macro   0x00000000       0x1c ./src/ctsu_thread_entry.o
- .debug_macro   0x00000000       0x16 ./src/ctsu_thread_entry.o
  .debug_macro   0x00000000       0x46 ./src/ctsu_thread_entry.o
+ .debug_macro   0x00000000       0x16 ./src/ctsu_thread_entry.o
+ .debug_macro   0x00000000       0x1c ./src/ctsu_thread_entry.o
  .debug_macro   0x00000000       0x16 ./src/ctsu_thread_entry.o
  .debug_macro   0x00000000       0x2e ./src/ctsu_thread_entry.o
  .debug_macro   0x00000000       0x16 ./src/ctsu_thread_entry.o
@@ -17375,8 +17375,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x46 ./src/hal_entry.o
  .debug_macro   0x00000000       0x16 ./src/hal_entry.o
  .debug_macro   0x00000000       0x16 ./src/hal_entry.o
- .debug_macro   0x00000000       0x1c ./src/hal_entry.o
- .debug_macro   0x00000000       0x16 ./src/hal_entry.o
  .debug_macro   0x00000000       0x46 ./src/hal_entry.o
  .debug_macro   0x00000000       0x10 ./src/hal_entry.o
  .debug_macro   0x00000000       0x1c ./src/hal_entry.o
@@ -17384,6 +17382,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x167 ./src/hal_entry.o
  .debug_macro   0x00000000      0x7eb ./src/hal_entry.o
  .debug_macro   0x00000000       0x10 ./src/hal_entry.o
+ .debug_macro   0x00000000       0x1c ./src/hal_entry.o
+ .debug_macro   0x00000000       0x16 ./src/hal_entry.o
  .debug_macro   0x00000000       0x2e ./src/hal_entry.o
  .debug_macro   0x00000000       0x16 ./src/hal_entry.o
  .debug_macro   0x00000000       0x10 ./src/hal_entry.o
@@ -17577,9 +17577,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x46 ./src/usb_monitor_thread_entry.o
  .debug_macro   0x00000000       0x16 ./src/usb_monitor_thread_entry.o
  .debug_macro   0x00000000       0x16 ./src/usb_monitor_thread_entry.o
- .debug_macro   0x00000000       0x1c ./src/usb_monitor_thread_entry.o
- .debug_macro   0x00000000       0x16 ./src/usb_monitor_thread_entry.o
  .debug_macro   0x00000000       0x46 ./src/usb_monitor_thread_entry.o
+ .debug_macro   0x00000000       0x16 ./src/usb_monitor_thread_entry.o
+ .debug_macro   0x00000000       0x1c ./src/usb_monitor_thread_entry.o
  .debug_macro   0x00000000       0x16 ./src/usb_monitor_thread_entry.o
  .debug_macro   0x00000000       0x2e ./src/usb_monitor_thread_entry.o
  .debug_macro   0x00000000       0x16 ./src/usb_monitor_thread_entry.o

@@ -1217,7 +1217,7 @@ static void sensor_optimize_sensitivity(void * p_arg)
             {
                 return;     //CG Modified to prevent Warning by return with parameter --> return (touch_err_t)ctsu_err;
             }
-#endif
+#endif  //#if (TOUCH_CFG_PARAM_CHECKING_ENABLE==true)
             count = 0;
         }
     }

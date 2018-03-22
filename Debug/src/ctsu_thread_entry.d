@@ -68,13 +68,13 @@ src/ctsu_thread_entry.o: ../src/ctsu_thread_entry.c \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\r_touch_v2\inc\driver\instances/r_touch.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\driver/r_touch_cfg.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\r_touch_v2\inc\driver\api/r_touch_api.h \
- C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_button_v2\inc\driver\instances/sf_touch_button.h \
- C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_touch_button_cfg.h \
- C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_button_v2\inc\driver\api/sf_touch_button_api.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_ctsu_comm_cfg.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_ctsu_comm\inc\framework\instances/sf_ctsu_comm.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_ctsu_comm\inc\framework\api/sf_ctsu_comm_api.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\framework\api/sf_comms_api.h \
+ C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_button_v2\inc\driver\instances/sf_touch_button.h \
+ C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_touch_button_cfg.h \
+ C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_button_v2\inc\driver\api/sf_touch_button_api.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\driver\instances/r_cgc.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\driver/r_cgc_cfg.h \
  C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\driver\api/r_cgc_api.h \
@@ -235,12 +235,6 @@ C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\driver/r_to
 
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\r_touch_v2\inc\driver\api/r_touch_api.h:
 
-C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_button_v2\inc\driver\instances/sf_touch_button.h:
-
-C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_touch_button_cfg.h:
-
-C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_button_v2\inc\driver\api/sf_touch_button_api.h:
-
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_ctsu_comm_cfg.h:
 
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_ctsu_comm\inc\framework\instances/sf_ctsu_comm.h:
@@ -248,6 +242,12 @@ C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_ctsu_comm\inc\framew
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_ctsu_comm\inc\framework\api/sf_ctsu_comm_api.h:
 
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\framework\api/sf_comms_api.h:
+
+C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_button_v2\inc\driver\instances/sf_touch_button.h:
+
+C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy_cfg\ssp_cfg\framework/sf_touch_button_cfg.h:
+
+C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\sf_button_v2\inc\driver\api/sf_touch_button_api.h:
 
 C:\Projects\AE_CAP1_S3A7_ST_Mini_App_USB_Monitor\synergy\ssp\inc\driver\instances/r_cgc.h:
 
